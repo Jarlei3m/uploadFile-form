@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('./images/landscape-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+}
+
+form {
+    background-color: #202847e8;
+    width: 90vw;
+    height: min(90vh, calc(80% + 100px));
+
+    margin: auto auto;
+    padding-bottom: 8rem;
+
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    color: #cfcece;
+} 
+
+form .header p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+form .header h3 {
+    font-size: 2.8rem;
+    line-height: 1.8;
+}
+
+form fieldset {
+    width: 80%;
+    max-width: 90rem;
+    border: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.8rem;
+
+    margin-bottom: 5rem;
+}
+
+section .input-block{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+
+    position: relative;
+}
+
+section .input-block label,
+section .input-block span {
+    font-size: 1.5rem;
+    line-height: 1.8;
+
+    color: #8C9CC3;
+}
+
+section .input-block input,
+section .input-block textarea,
+section .input-block select {
+    padding: 1.6rem 1.2rem;
+
+    color: #a6aec2;
+    font-weight: 700;
+
+    outline: none;
+
+    background-color: transparent;
+    border: 2px solid #181d31;
+    border-radius: 6px;
+}
+
+section .input-block.password input {
+    letter-spacing: 4px;
+}
+
+section .input-block input:focus,
+section .input-block textarea:focus,
+section .input-block select:focus {
+    border: 1px solid #e463f5;
+}
+
+section .input-block input.filled,
+section .input-block textarea.filled,
+section .input-block select.filled {
+    border: 1px solid #68f563;
+}
+
+section .input-block select:focus{
+    background-color: #202847;
+    z-index: 1;
+}
+
+section .input-block select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+    z-index: 3;
+}
+
+section .input-block i {
+    position: absolute;
+    right: 1.5rem;
+    top: 3.7rem;
+
+    font-size: 3.1rem;
+    color: #a6aec2;
+
+    z-index: 2;
+}
+
+section .input-block input::placeholder,
+section .input-block textarea::placeholder,
+section .input-block select::placeholder {
+    font-weight: 500;
+
+    color: #6A7090;
+    letter-spacing: normal;
+}
+
+section .input-block textarea {
+    resize: none;
+    max-height: 16rem;
+
+    width: 100%;
+}
+
+section .input-block.upload {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+
+    margin: 0;
+}
+
+section .input-block.upload input[type="file"] {
+    display: none;
+}
+
+section .input-block.upload .upload-btn {
+    display: block;
+
+    border: 2px solid #181d31;
+    border-radius: 6px;
+
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    
+    text-align: center;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: #6A7090;
+
+    padding: 0.4rem 0.8rem;
+    width: 14rem;
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+section .input-block.upload .upload-btn.active {
+    border: 2px solid #68f563;
+}
+
+section .input-block.upload .upload-btn:hover {
+    background-color: #202847;
+}
+
+button {
+    border: none;
+    width: 36rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    padding: 16px 0;
+
+    background-color: #e463f5;
+    color: #cfcece;
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e77ff5;
+}

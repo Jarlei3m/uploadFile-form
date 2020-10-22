@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div class="header">
+            <p>UIDesignDaily</p>
+            <h3>Upload Files</h3>
+        </div>
+        <fieldset>
+            <section>
+                <div class="input-block password">
+                    <label for="key">Authorization Key</label>
+                    <input 
+                        class="input"
+                        type="password" 
+                        name="key"
+                        placeholder="Enter your Authorization key"
+                        required
+                    >
+                </div>
+
+                <div class="input-block">
+                    <label for="title">Title</label>
+                    <input 
+                        class="input"
+                        type="text" 
+                        name="title"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Enter your Project name"
+                        required
+                    >
+                </div>
+
+                <div class="input-block">
+                    <label for="Description">Description</label>
+                    <textarea class="input" spellcheck="false" placeholder="Description" name="Description" id="" cols="30" rows="10"></textarea>
+                </div>
+            </section>
+
+            <section>
+                <div class="input-block">
+                    <label for="tags">Tags (comma separated)</label>
+                    <input 
+                        class="input"
+                        type="text" 
+                        name="tags"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Tags (comma separated)"
+                        required
+                    >
+                </div>
+
+                <div class="input-block">
+                    <label for="date">Date</label>
+                    <input 
+                        id="date"
+                        class="input"
+                        type="text"
+                        name="date"
+                        autocomplete="off"
+                        placeholder="DD/MM/YYYY"
+                        required
+                    >
+                </div>
+
+                <div class="input-block">
+                    <label for="software">Software</label>
+                    <select class="input" name="software">
+                        <option value="" disabled selected>Select a software</option>
+                        <option value="sketch">Sketch</option>
+                        <option value="photoshop">Photoshop</option>
+                        <option value="figma">Figma</option>
+                        <option value="illustrator">Illustrator</option>
+                    </select>
+                    <i class="material-icons">expand_more</i>
+                </div>
+
+                <div class="input-block upload">
+
+                    <div class="thumb-img">
+                        <label for="thumb">Thumbnail Image</label>
+                        <label for="thumb-btn" class="upload-btn" id="thumb">Upload File</label>
+                        <input 
+                            type="file"
+                            name="thumb"
+                            id="thumb-btn"
+                        >
+                        <span class="thumb-upload-check">No file uploaded</span>
+                    </div>
+
+                    <div class="source-img">
+                        <label for="source">Source File</label>
+                        <label for="source-btn" class="upload-btn" id="source">Upload File</label>
+                        <input 
+                            type="file"
+                            name="source"
+                            id="source-btn"
+                        >
+                        <span class="source-upload-check">No file uploaded</span>
+                    </div>
+
+                </div>
+
+            </section>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

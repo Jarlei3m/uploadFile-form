@@ -1,0 +1,95 @@
+@media(max-width: 860px) {
+    :root {
+        font-size: 60%;
+    }
+
+    form .header p {
+        margin-bottom: 2rem;
+    }
+
+    section .input-block.upload .upload-btn {
+        width: 12rem;
+    }
+}
+
+@media(max-width: 700px) {
+    :root {
+        font-size: 56%;
+    }
+
+    section .input-block.upload .upload-btn {
+        width: 10rem;
+    }
+}
+
+@media(max-width: 620px) {
+    :root {
+        font-size: 48%;
+    }
+
+    form {
+        height: auto;
+    }
+
+    form .header {
+        margin-bottom: 1rem;
+    }
+
+    form .header p {
+        margin-top: 2rem;
+    }
+
+    section .input-block input, 
+    section .input-block textarea, 
+    section .input-block select {
+        padding: 1.2rem 1rem;
+    }
+
+    section .input-block select {
+        font-size: 1.4rem;
+    }
+
+    section .input-block textarea {
+        max-height: 12rem;
+    }
+
+    section .input-block input::placeholder,
+    section .input-block textarea::placeholder,
+    section .input-block select::placeholder {
+        font-size: 1.4rem;
+    }
+
+    section .input-block i {
+        top: 3.3rem;
+    }
+
+    form fieldset {
+        display: unset;
+    }
+
+    section .input-block.upload .upload-btn {
+        width: 16rem;
+    }
+
+    button {
+        width: 34rem;
+    }
+}
+
+@media(max-width: 350px) {
+    form .header p {
+        font-size: 1.5rem;
+    }
+
+    form .header h3 {
+        font-size: 2.5rem;
+    }
+
+    section .input-block.upload .upload-btn {
+        width: 14rem;
+    }
+
+    button {
+        width: 30rem;
+    }
+}
