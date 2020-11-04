@@ -41,6 +41,11 @@ form {
     justify-content: center;
 }
 
+form .hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 form .header {
     display: flex;
     flex-direction: column;

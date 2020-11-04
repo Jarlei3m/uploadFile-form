@@ -10,7 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <form action="">
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden">
+            <label>Don´t fill this out if you´re human: <input name="bot-field" /></label>
+        </p>
+        
         <div class="header">
             <p>UIDesignDaily</p>
             <h3>Upload Files</h3>
